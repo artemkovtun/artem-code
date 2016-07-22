@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="productsStore">
+<head lang="en">
+    <title>Products Store</title>
+    <!--Style sheets-->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="productsStore">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Products Store</div>
+            </div>
+        </div>
+    </nav>
+
+    <div ng-view class="container">
+        <!--<div ng-include="'app/products/productListView.html'"></div>-->
+    </div>
+    <!-- Library Scripts -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <!-- Application Scripts -->
+    <script src="app/app.js"></script>
+
+    <!-- Services -->
+    <script src="common/common.services.js"></script>
+    <script src="common/productResource.js"></script>
+
+    <!-- Product Controllers -->
+    <script src="app/products/productListCtrl.js"></script>
+    <script src="app/products/productEditCtrl.js"></script>
+</body>
+</html>

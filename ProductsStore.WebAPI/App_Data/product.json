@@ -1,0 +1,42 @@
+[
+  {
+    "Description": "Leaf rake with 48-inch wooden handle.",
+    "Price": 19.95,
+    "ProductCode": "GDN-0011",
+    "ProductId": 1,
+    "ProductName": "Leaf Rake",
+    "ReleaseDate": "2009-03-19T00:00:00"
+  },
+  {
+    "Description": "16 gallon capacity rolling garden cart",
+    "Price": 32.99,
+    "ProductCode": "GDN-0023",
+    "ProductId": 2,
+    "ProductName": "Garden Cart",
+    "ReleaseDate": "2010-03-18T00:00:00"
+  },
+  {
+    "Description": "Curved claw steel hammer",
+    "Price": 8.99,
+    "ProductCode": "TBX-0048",
+    "ProductId": 5,
+    "ProductName": "Hammer",
+    "ReleaseDate": "2013-05-21T00:00:00"
+  },
+  {
+    "Description": "15-inch steel blade hand saw",
+    "Price": 11.55,
+    "ProductCode": "TBX-0022",
+    "ProductId": 8,
+    "ProductName": "Saw",
+    "ReleaseDate": "2009-05-15T00:00:00"
+  },
+  {
+    "Description": "Standard two-button video game controller",
+    "Price": 35.95,
+    "ProductCode": "GMG-0042",
+    "ProductId": 10,
+    "ProductName": "Video Game Controller",
+    "ReleaseDate": "2002-10-15T00:00:00"
+  }
+]

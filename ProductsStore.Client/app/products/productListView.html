@@ -1,0 +1,43 @@
+﻿<div class="panel panel-primary" ng-controller="ProductListCtrl as vm">
+    <div class="panel-heading" style="font-size: large">
+        Product List
+    </div>
+    <br/> <br /> 
+   <div class="form-horizontal">
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="inputSearch">               
+                        Search                   
+            </label>
+            <div class="col-md-4">
+                <span>
+                    <input class="form-control" id="inputSearch"
+                           name="inputSearch" type="text"
+                           ng-model="search" />
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Product</td>
+                    <td>Code</td>
+                    <td>Available</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in vm.products | filter: { productCode : search } | orderBy: 'productCode'">
+                    <td><a class="btn btn-primary" href="#updateProductForm/{{product.productId}}">{{ product.productName }}</a></td>
+                    <td>{{ product.productCode }}</td>
+                    <td>{{ product.releaseDate | date }}</td>
+                    <td>{{ product.price | currency }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr/>
+        <a class="btn btn-primary" href="#updateProductForm/0">Add New Product</a>
+    </div>
+</div>
